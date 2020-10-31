@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:wght@300;400;500;700;900&display=swap");
+
+:root {
+    --main-accent-color: #20639b;
+    --section-title-color-dark: #37474f;
+    --section-title-color-dark-2: #173f5f;
+    --body-color: #495057
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 3rem;
+    line-height: 4rem;
+    font-weight: 900;
+}
+
+/* Section title */
+
+.section-title{
+    position: relative;
+}
+
+.section-title-heading{
+    font-family: 'Open Sans', sans-serif;
+    color: var(--section-title-color-dark);
+    padding-top: 2rem;
+    text-transform: capitalize;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.section-title::after{
+    content: '';
+    position: absolute;
+    border-bottom: 3px solid var(--section-title-color-dark-2);
+    width:  8%;
+    top: 80px;
+}
+
+.section-title:hover::after{
+    width: 12%;
+    transition: all 0.6s ease-out;
+}
+/* ========== NAVIGATION ========== */
+
+.navbar {
+    padding-top: 0.5rem;
+    background-image:  linear-gradient(to right, #083355, #116593 );
+    /* background-color: #083355; */
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #c0dae7;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: .85rem;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #ffffff;
+}
+
+.navbar-brand{
+    color: #ffffff;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 900;
+}
+
+.navbar-brand img{
+    color: #ffffff;
+    height: 25px;
+}
+
+/* ========== HERO ========== */
+
+#hero{
+    background-image: url('../img/background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 8.85rem;
+    padding-bottom: 8.85rem;
+    position: relative;
+}
+
+.main-hero-content h1{
+    color: #ffffff;
+    letter-spacing: .11rem;
+    margin-top: 2.2rem;
+}
+
+.main-hero-content span{
+    color: #ffffff;
+    font-size: 1rem;
+    margin-top: 2.2rem;
+    font-weight: 600;
+}
+
+.coming-soon{
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+
+.coming-soon img{
+    color: #ffffff;
+    width: 400px;
+}
+
+.muslim-hackfest-title{
+    font-family: 'Open Sans', sans-serif;
+    color: #ffffff;
+    margin-top: 2rem;
+    padding-top: 3rem;
+    text-transform: capitalize;
+    font-weight: 700;
+    font-size:3rem;
+}
+
+.muslim-hackfest-paragraph{
+    color: white;
+    margin-top: 1rem;
+    margin-bottom: 4rem;
+}
+
+/* ==========FOOTER============ */
+
+footer{
+    background-color: var(--section-title-color-dark-2);
+    background-size: auto;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+footer img{
+    height: 20px;
+}
+
+.footer-text p{
+    padding-top: 1.2rem;
+    font-size: 11px;
+    font-weight: lighter;
+    color: white;
+}
